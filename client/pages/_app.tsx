@@ -34,7 +34,7 @@ AppComponent.getInitialProps = async (
         const { data } = await client.get<AppOwnProps>('/api/users/currentuser')
         return { ...ctx, ...data }
     } else {
-        const { data } = await axios.get<AppOwnProps>('https://ticketing.dev/api/users/currentuser')
+        const { data } = await axios.get<AppOwnProps>('http://www.ticketing-app-free.store/api/users/currentuser')
         return { ...ctx, ...data }
     }
 }
