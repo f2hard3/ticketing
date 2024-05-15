@@ -8,7 +8,7 @@ import { TicketUpdatedSubscriber } from './events/subscribers/ticket-updated-sub
 import { PaymentCreatedSubscriber } from './events/subscribers/payment-created.subscriber'
 
 const start = async () => {
-    console.log('Starting...')
+    console.log('Starting....')
 
     if (!process.env.JWT_KEY) {
         throw new Error('JWT_KEY must be defined')
