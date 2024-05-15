@@ -3,7 +3,7 @@ import { GetServerSidePropsContext, NextPageContext } from 'next'
 
 const buildClient = ({ req }: GetServerSidePropsContext | NextPageContext): AxiosInstance => {
     return axios.create({
-        baseURL: 'http://ingress-nginx-controller.ingress-nginx.svc.cluster.local',
+        baseURL: 'http://170.64.240.108/',
         headers: req.headers
     })
 }
