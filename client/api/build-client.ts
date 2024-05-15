@@ -3,7 +3,7 @@ import { GetServerSidePropsContext, NextPageContext } from 'next'
 
 const buildClient = ({ req }: GetServerSidePropsContext | NextPageContext): AxiosInstance => {
     return axios.create({
-        baseURL: 'http://170.64.240.108/',
+        baseURL: 'http://ticketing-app-free.store',
         headers: req.headers
     })
 }
