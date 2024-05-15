@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: www.ticketing-app-free.store
+    - host: ticketing-app-free.store
       http:
         paths:
           - path: /api/users/?(.*)
@@ -51,7 +51,7 @@ kind: Service
 metadata:
   annotations:
     service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: 'false'
-    service.beta.kubernetes.io/do-loadbalancer-hostname: www.ticketing-app-free.store
+    service.beta.kubernetes.io/do-loadbalancer-hostname: ticketing-app-free.store
   labels:
     helm.sh/chart: ingress-nginx-2.0.3
     app.kubernetes.io/name: ingress-nginx

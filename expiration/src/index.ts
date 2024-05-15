@@ -4,7 +4,7 @@ import { rabbitmqWrapper } from './rabbitmq-wrapper'
 import { Exchanges } from '@f2hard3-ticketing/common'
 
 const start = async () => {
-    console.log('Starting...')
+    console.log('Starting....')
     if (!process.env.RABBITMQ_URI) {
         throw new Error('RABBITMQ_URI must be defined')
     }
